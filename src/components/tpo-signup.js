@@ -26,7 +26,7 @@ const TPOsignup = () => {
     if(!FNregex.test(e.target.value)){
       setFirstName(true);
     }
-    if(e.target.value =="" || FNregex.test(e.target.value)){
+    if(e.target.value ==="" || FNregex.test(e.target.value)){
       setFirstName(false);
     }
   }
@@ -36,7 +36,7 @@ const TPOsignup = () => {
     if(!LNregex.test(e.target.value)){
       setLastName(true);
     }
-    if(e.target.value =="" || LNregex.test(e.target.value)){
+    if(e.target.value ==="" || LNregex.test(e.target.value)){
       setLastName(false);
     }
   }
@@ -46,7 +46,7 @@ const TPOsignup = () => {
     if(!IDregex.test(e.target.value)){
       setEmpId(true);
     }
-    if(e.target.value =="" || IDregex.test(e.target.value)){
+    if(e.target.value ==="" || IDregex.test(e.target.value)){
       setEmpId(false);
     }
   }
@@ -56,7 +56,7 @@ const TPOsignup = () => {
     if(!emailRegex.test(e.target.value)){
       setEmail(true);
     }
-    if(e.target.value =="" || emailRegex.test(e.target.value)){
+    if(e.target.value ==="" || emailRegex.test(e.target.value)){
       setEmail(false);
     }
   }
@@ -66,7 +66,7 @@ const TPOsignup = () => {
     if(!phoneRegex.test(e.target.value)){
       setPhone(true);
     }
-    if(e.target.value =="" || phoneRegex.test(e.target.value)){
+    if(e.target.value ==="" || phoneRegex.test(e.target.value)){
       setPhone(false);
     }
   }

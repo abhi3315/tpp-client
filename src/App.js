@@ -1,6 +1,7 @@
 
 import TPOsignup from './components/tpo-signup';
 import Login from './components/Login_student';
+import StuDash from './StudentDashboard/StuDash';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import LoginTpo from './components/Login_tpo';
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/signup' element={<TPOsignup />} />
         <Route path='/student/login' element={<Login />} />
         <Route path='/tpo/login' element={<LoginTpo />} />
+        <Route path='/student/dashboard' element={<StuDash />} />
         <Route path='/' element={<Home />} />
 
       </Routes>
