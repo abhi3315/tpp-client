@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 
 const SeverityPillRoot = styled('span')(({ theme, ownerState }) => {
-  const backgroundColor = theme.palette[ownerState.color].main;
+  const backgroundColor = theme.palette[ownerState.color].light;
   const color = theme.palette[ownerState.color].contrastText;
 
   return {
     alignItems: 'center',
     backgroundColor,
-    borderRadius: 12,
+    borderRadius: 10,
     color,
     cursor: 'default',
     display: 'inline-flex',
@@ -16,11 +16,11 @@ const SeverityPillRoot = styled('span')(({ theme, ownerState }) => {
     flexShrink: 0,
     fontFamily: theme.typography.fontFamily,
     fontSize: theme.typography.pxToRem(12),
-    lineHeight: 2,
+    lineHeight: 2.5,
     fontWeight: 600,
     justifyContent: 'center',
     letterSpacing: 0.5,
-    minWidth: 20,
+    minWidth: 80,
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
     textTransform: 'uppercase',

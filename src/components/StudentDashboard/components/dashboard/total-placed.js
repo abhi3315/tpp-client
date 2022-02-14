@@ -5,7 +5,7 @@ import { red } from '@mui/material/colors';
 import PeopleIcon from '@mui/icons-material/People';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
-export const TasksProgress = (props) => (
+export const TotalPlaced = (props) => (
   <Card
     sx={{ height: '100%' }}
     {...props}
@@ -73,24 +73,6 @@ export const TasksProgress = (props) => (
           Since last month
         </Typography>
       </Box>
-      {/* <Grid item>
-          <Avatar
-            sx={{
-              backgroundColor: 'warning.main',
-              height: 56,
-              width: 56
-            }}
-          >
-            <InsertChartIcon />
-          </Avatar>
-        </Grid>
-      </Grid>
-      <Box sx={{ pt: 3 }}>
-        <LinearProgress
-          value={75.5}
-          variant="determinate"
-        />
-      </Box> */}
     </CardContent>
   </Card>
 );

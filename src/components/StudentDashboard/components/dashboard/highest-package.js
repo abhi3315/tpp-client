@@ -1,13 +1,11 @@
-import { Avatar, Box, Card, CardContent, Grid, Typography } from '@mui/material';
-import BadgeIcon from '@mui/icons-material/Badge';
+import { Avatar, Card, CardContent, Grid, Box, Typography } from '@mui/material';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { green } from '@mui/material/colors';
-import SchoolIcon from '@mui/icons-material/School';
 
-export const Budget = (props) => (
-  <Card
-    sx={{ height: '100%' }}
-    {...props}
-  >
+
+export const HighestPackage = (props) => (
+  <Card {...props}>
     <CardContent>
       <Grid
         container
@@ -20,46 +18,55 @@ export const Budget = (props) => (
             gutterBottom
             variant="overline"
           >
-            Total Students
+            Highest Package
           </Typography>
           <Typography
             color="textPrimary"
             variant="h4"
           >
-            2000
+            41.4 LPA
           </Typography>
         </Grid>
         <Grid item>
           <Avatar
             sx={{
               background: "white",
-              height: 70,
+              height: 74,
               width: 70
             }}
           >
-            <SchoolIcon sx={{ fontSize: 60 }} color="primary" />
+            <EmojiEventsIcon sx={{ fontSize: 60, color: "#fab937" }}/>
           </Avatar>
         </Grid>
       </Grid>
       <Box
         sx={{
-          pt: 2,
+          alignItems: 'center',
           display: 'flex',
-          alignItems: 'center'
+          pt: 2
         }}
       >
-
-            <BadgeIcon sx={{ fontSize: 28, color: green[500] }}/>
+        <ArrowUpwardIcon sx={{ color: green[500] }}/>
+        <Typography
+          variant="body2"
+          sx={{
+            mr: 1,
+            ml: 0.4,
+            color: green[500]
+          }}
+        >
+          27%
+        </Typography>
         <Typography
           sx={{
             mr: 1,
-            ml:1,
+            ml: 9.6,
             mt: 0.5,
-            color : "green",
           }}
-          variant="body2"
+          color="textSecondary"
+          variant="caption"
         >
-          2018-2022 Batch
+          Since last year
         </Typography>
       </Box>
     </CardContent>

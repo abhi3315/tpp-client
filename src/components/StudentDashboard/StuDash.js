@@ -1,24 +1,14 @@
-// import React, { Component, createRef } from 'react';
-
-// const StuDash = () => {
-
-//     return (
-//         <>
-//         </>
-//     )
-// }
-
 import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
-import { Budget } from '../components/dashboard/budget';
-import { LatestOrders } from '../components/dashboard/latest-orders';
-import { LatestProducts } from '../components/dashboard/latest-products';
-import { Sales } from '../components/dashboard/sales';
-import { TasksProgress } from '../components/dashboard/tasks-progress';
-import { TotalCustomers } from '../components/dashboard/total-customers';
-import { TotalProfit } from '../components/dashboard/total-profit';
-import { TrafficByDevice } from '../components/dashboard/traffic-by-device';
-import { DashboardLayout } from '../components/dashboard-layout';
+import { TotalStudents } from './components/dashboard/total-students';
+import { CompanyDrives} from './components/dashboard/company-drives';
+import { StudentDoubts } from './components/dashboard/student-doubts';
+import { CampusRecruiters } from './components/dashboard/campus-recruiters';
+import { TotalPlaced } from './components/dashboard/total-placed';
+import { TotalOffers } from './components/dashboard/total-offers';
+import { HighestPackage} from './components/dashboard/highest-package';
+import { DepartmentPlacement } from './components/dashboard/department-placement';
+import { DashboardLayout } from './components/dashboard-layout';
 
 const StuDash = () => (
   <>
@@ -46,7 +36,7 @@ const StuDash = () => (
             xl={3}
             xs={12}
           >
-            <Budget />
+            <TotalStudents />
           </Grid>
           <Grid
             item
@@ -55,7 +45,7 @@ const StuDash = () => (
             sm={6}
             xs={12}
           >
-            <TotalCustomers />
+            <TotalOffers />
           </Grid>
           <Grid
             item
@@ -64,7 +54,7 @@ const StuDash = () => (
             sm={6}
             xs={12}
           >
-            <TasksProgress />
+            <TotalPlaced />
           </Grid>
           <Grid
             item
@@ -73,7 +63,7 @@ const StuDash = () => (
             sm={6}
             xs={12}
           >
-            <TotalProfit sx={{ height: '100%' }} />
+            <HighestPackage sx={{ height: '100%' }} />
           </Grid>
           <Grid
             item
@@ -82,7 +72,7 @@ const StuDash = () => (
             xl={9}
             xs={12}
           >
-            <Sales />
+            <CampusRecruiters />
           </Grid>
           <Grid
             item
@@ -91,9 +81,9 @@ const StuDash = () => (
             xl={3}
             xs={12}
           >
-            <TrafficByDevice sx={{ height: '100%' }} />
+            <DepartmentPlacement sx={{ height: '100%' }} />
           </Grid>
-          <Grid
+          {/* <Grid
             item
             lg={4}
             md={6}
@@ -110,6 +100,24 @@ const StuDash = () => (
             xs={12}
           >
             <LatestOrders />
+          </Grid> */}
+          <Grid
+            item
+            lg={8}
+            md={12}
+            xl={9}
+            xs={12}
+          >
+            <CompanyDrives />
+          </Grid>
+          <Grid
+            item
+            lg={4}
+            md={6}
+            xl={3}
+            xs={12}
+          >
+            <StudentDoubts sx={{ height: '100%' }} />
           </Grid>
         </Grid>
       </Container>
@@ -121,7 +129,7 @@ StuDash.getLayout = (page) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>
-);
+)
 
 export default StuDash;
 

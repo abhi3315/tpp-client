@@ -14,7 +14,7 @@ import { UserAdd as UserAddIcon } from '../icons/user-add';
 import { Users as UsersIcon } from '../icons/users';
 import { XCircle as XCircleIcon } from '../icons/x-circle';
 import { Logo } from './logo';
-import { NavItem } from './nav-item';
+import { NavItem } from '../nav-item';
 
 const items = [
   {
@@ -96,7 +96,7 @@ export const DashboardSidebar = (props) => {
               href="/"
               passHref
             >
-              <a>
+              <a
                 <Logo
                   sx={{
                     height: 42,

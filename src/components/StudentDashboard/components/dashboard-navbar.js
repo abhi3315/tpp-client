@@ -8,8 +8,8 @@ import { UserCircle as UserCircleIcon } from '../icons/user-circle';
 import { Users as UsersIcon } from '../icons/users';
 
 const DashboardNavbarRoot = styled(AppBar)(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
-  boxShadow: theme.shadows[3]
+  // backgroundColor: theme.palette.background.paper,
+  // boxShadow: theme.shadows[3]
 }));
 
 export const DashboardNavbar = (props) => {

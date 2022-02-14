@@ -3,7 +3,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import { green } from '@mui/material/colors';
 
-export const TotalCustomers = (props) => (
+export const TotalOffers = (props) => (
   <Card {...props}>
     <CardContent>
       <Grid
@@ -30,7 +30,7 @@ export const TotalCustomers = (props) => (
           <Avatar
             sx={{
               background: "white",
-              height: 70,
+              height: 80,
               width: 70
             }}
           >
